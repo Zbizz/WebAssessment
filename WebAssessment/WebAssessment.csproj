@@ -158,6 +158,8 @@
     <Compile Include="Interfaces\IOrderStatus.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Models\BaseClass.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\OrderStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
