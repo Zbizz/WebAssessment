@@ -48,5 +48,7 @@ namespace WebAssessment.Models
         public System.Data.Entity.DbSet<WebAssessment.Models.BasketItem> BasketItems { get; set; }
 
         public System.Data.Entity.DbSet<WebAssessment.Models.Order> Orders { get; set; }
+
+        public System.Data.Entity.DbSet<WebAssessment.Models.Customer> Customers { get; set; }
     }
 }
