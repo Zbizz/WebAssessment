@@ -9,65 +9,16 @@
 <div>
     <h4>Order</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.OrderDate)
-        </dt>
+    <h3>Order No. @Html.DisplayFor(model => model.Id)</h3>
+    <p>Order date: @Html.DisplayFor(model => model.OrderDate)</p>
 
-        <dd>
-            @Html.DisplayFor(model => model.OrderDate)
-        </dd>
+    <h4>
+        Total price: &pound; @Html.DisplayFor(model => model.FullPrice)
+    </h4>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.OrderStatus)
-        </dt>
+    @Html.ActionLink("Checkout", "Create", new { controller = "Customers" }, new { @class = "btn btn-primary" })
 
-        <dd>
-            @Html.DisplayFor(model => model.OrderStatus)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CustomerId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CustomerId)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.FullPrice)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.FullPrice)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PriceAfterDiscount)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PriceAfterDiscount)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DiscountApplied)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DiscountApplied)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedDate)
-        </dd>
-
-    </dl>
 </div>
 <p>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to the products", "Index", new { controller = "Products" })
 </p>
