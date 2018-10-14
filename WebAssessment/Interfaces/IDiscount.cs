@@ -8,6 +8,8 @@ namespace WebAssessment.Interfaces
 {
     interface IDiscount
     {
+        string DiscountCode { get; set; }
+        int PercentageOff { get; set; }
         decimal Discount(IOrder order);
     }
 }

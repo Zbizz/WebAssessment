@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebAssessment.Models;
 
 namespace WebAssessment.Interfaces
 {
@@ -11,6 +12,8 @@ namespace WebAssessment.Interfaces
         DateTime OrderDate { get; set; }
         int OrderStatus { get; set; }
         int CustomerId { get; set; }
-        List<IBasketItem> Basket { get; set; }
+        List<BasketItem> Basket { get; set; }
+        decimal FullPrice { get; }
+        decimal PriceAfterDiscount { get; set; }
     }
 }

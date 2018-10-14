@@ -11,5 +11,6 @@ namespace WebAssessment.Interfaces
         int ProductId { get; set; }
         int OrderId { get; set; }
         int Quantity { get; set; }
+        decimal Price { get; set; }
     }
 }
