@@ -41,7 +41,6 @@
             @Html.DisplayFor(modelItem => item.CreatedDate)
         </td>
         <td>
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) | 
             @Html.ActionLink("Add to Basket", "Create", new { controller= "BasketItems", id =item.Id } )
         </td>
     </tr>

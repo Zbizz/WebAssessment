@@ -21,20 +21,6 @@ namespace WebAssessment.Controllers
             return View(await db.Products.ToListAsync());
         }
 
-        // GET: Products/Details/5
-        public async Task<ActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Product product = await db.Products.FindAsync(id);
-            if (product == null)
-            {
-                return HttpNotFound();
-            }
-            return View(product);
-        }
 
 
      
