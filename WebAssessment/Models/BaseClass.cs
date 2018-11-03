@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+// Every class must inherit from this to keep things standardised
+
 namespace WebAssessment.Models
 {
     public class BaseClass
